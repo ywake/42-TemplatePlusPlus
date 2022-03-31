@@ -6,5 +6,5 @@
   AllowShortFunctionsOnASingleLine: All,
   IndentCaseLabels: false,
   NamespaceIndentation: All,
-  BreakConstructorInitializers: AfterColon
+  BreakConstructorInitializers: AfterColon,
 }
