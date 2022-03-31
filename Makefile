@@ -14,7 +14,7 @@ SRCS	:=
 TEST_CPP:=
 
 CXX		:= c++
-CXXFLAGS:= -g -Wall -Werror -Wextra -std=c++98 -pedantic
+CXXFLAGS:= -g -Wall -Werror -Wextra -std=c++98
 
 SRCDIRS	:= $(call uniq, $(dir $(SRCS)))
 
@@ -76,7 +76,7 @@ sani: $(OBJDIRS) $(OBJS)
 	$(CXX) $(CXXFLAGS) -fsanitize=address $(OBJS) -o $(NAME) $(LIBS)
 
 Darwin_leak: $(DSTRCTR) $(OBJDIRS) $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) $(DSTRCTR) -o $(NAME) $(LIBS)
+	$(CXX) -g -std=c++98 $(OBJS) $(DSTRCTR) -o $(NAME) $(LIBS)
 
 Linux_leak: sani
 
