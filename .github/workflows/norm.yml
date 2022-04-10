@@ -3,7 +3,7 @@
 name: Norminette
 
 # Controls when the action will run.
-on: [push, pull_request, workflow_dispatch]
+on: [push]
 
 # on:
 #   # Triggers the workflow on push or pull request events but only for the master branch
