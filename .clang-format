@@ -7,4 +7,5 @@
   IndentCaseLabels: false,
   NamespaceIndentation: All,
   BreakConstructorInitializers: AfterColon,
+  AlwaysBreakTemplateDeclarations: Yes,
 }
